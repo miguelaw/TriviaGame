@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    <title>MW's Trivia Game</title>
+      
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!-- Additional Styling -->
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>My Trivia Game</h1>
+                        <p>
+                        <audio autoplay id="Music" loop>
+                        <source src="./assets/audio/Binary_Code.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                        </audio>
+                        </p>
+                </div>
+            </div>
+        </div>	
+    </header>
+
+    <div class="container">
+		<div class="row">
+			<div class = "col-md-12">
+				<div id= "header" >
+					<h4 class="text-center">Are you are techie person?</h4>
+					<h5 class="text-center">Take this quiz and find out!</h5>
+					<div class = "text-center"><button id = "startBtn" class="btn btn-success">Begin Quiz</button></div> <br>
+				</div>
+			</div>			
+		</div>
+		<div class="row">
+			<div id= "main" class = "col-md-12">
+				<div id="splashScreen" class="text-center"><img id="image1" src="./assets/images/binary_danger.png" alt="Matrix World">
+				</div>
+				<div id="questionBlock">
+					<h4 id="clock">Question number: <span id="questionNumber"></span></h4>
+					<h5>Time left: <span id="timeLeft"></span> seconds</h5>
+					<p id="question">What is?</p>
+					<div id="choiceBlock">
+						<ul id = "choices" class="list-group">
+							<li id = "A" class="list-group-item" style="color:#66FF00;background-color:black;">First item</li>
+							<li id = "B" class="list-group-item" style="color:#66FF00;background-color:black;">Second item</li>
+							<li id = "C" class="list-group-item" style="color:#66FF00;background-color:black;">Third item</li>
+							<li id = "D" class="list-group-item" style="color:#66FF00;background-color:black;">Fourth item</li>
+						</ul>
+					</div>
+				</div>
+				<div id = "answerArea" class="text-center">
+					<h4 id="answer"></h4>
+					<p>
+						<audio id="MusicError">
+                        <source src="./assets/audio/critical.sound.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+						</audio>
+						
+						<audio id="Success">
+						<source src="./assets/audio/windows.Success.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+						</audio>
+                    </p>
+					<p id="answerImage"></p>
+				</div>
+				<div id="summaryArea" class="text-center">
+					<h3>Quiz Results</h3>
+					<p>Number of questions: <span id="numQuestions"></span></p>
+					<p>Number of correct answers: <span id="numCorrect"></span></p>
+					<p>Number of incorrect answers: <span id="numWrong"></span></p>
+					<p>Geeky meter: <span id="bff"></span></p>
+					<p class="text-center"><button id = "restartBtn" class="btn btn-success">Restart</button></p>
+				</div>
+			</div>
+		</div>
+
+    </div>
+
+    <footer class = "container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h6>@Copyright 2017 Miguel Woroniak</h6>
+            </div>
+        </div>
+    </footer>
+
+
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Bootstrap JavaScript CDN -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- External JS File here -->
+<script src="./assets/javascript/app.js"></script>
+
+</body>
+</html>
