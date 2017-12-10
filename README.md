@@ -1,2 +1,2 @@
 # TriviaGame
-This is a Trivia Game, which makes use of times (JS)
+This is a Trivia Game, which makes use of timers (JS)
